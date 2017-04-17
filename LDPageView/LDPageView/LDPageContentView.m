@@ -103,7 +103,7 @@ static NSString *const LDPageContentViewCollectionViewCellIdentifier = @"LDPageC
     } else { // 向左滑动 索引增大
         targetIndex = currentIndex + 1;
         
-        if (targetIndex > self.childViewControllers.count) {
+        if (targetIndex > (self.childViewControllers.count - 1)) {
             targetIndex = self.childViewControllers.count - 1;
         }
         
@@ -145,7 +145,7 @@ static NSString *const LDPageContentViewCollectionViewCellIdentifier = @"LDPageC
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.pagingEnabled = YES;
-        _collectionView.bounces = NO;
+//        _collectionView.bounces = NO;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         
