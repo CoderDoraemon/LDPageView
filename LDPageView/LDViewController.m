@@ -7,8 +7,15 @@
 //
 
 #import "LDViewController.h"
+#import "LDCollectionViewLayout.h"
 
-@interface LDViewController ()
+static NSString *const kUICollectionViewCellIdentifier = @"kUICollectionViewCellIdentifier";
+
+@interface LDViewController () <UICollectionViewDelegate, UICollectionViewDataSource, LDCollectionViewLayoutDelegate>
+
+/** collectionView */
+@property (nonatomic, strong) UICollectionView *collectionView;
+
 
 @end
 
@@ -17,21 +24,72 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self setup];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
+    self.collectionView.frame = self.view.bounds;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setup {
+    
+    
+    
+    [self.view addSubview:self.collectionView];
+    
 }
-*/
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kUICollectionViewCellIdentifier forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor redColor];
+    
+    return cell;
+}
+
+
+#pragma mark - LDCollectionViewLayoutDelegate
+- (CGFloat)ld_collectionView:(UICollectionView *)collectionView layout:(LDCollectionViewLayout *)collectionViewLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath widthForItem:(CGFloat)width {
+    
+    return arc4random_uniform(150) + 100;
+    
+}
+
+#pragma mark - lazy
+- (UICollectionView *)collectionView {
+    
+    if (_collectionView == nil) {
+        
+//        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//        
+//        layout.itemSize = CGSizeMake(100, 100);
+//        layout.minimumLineSpacing = 10;
+//        layout.minimumInteritemSpacing = 10;
+        
+        
+        LDCollectionViewLayout *layout = [[LDCollectionViewLayout alloc] init];
+        layout.delegate = self;
+        layout.columnNumber = 2;
+        
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kUICollectionViewCellIdentifier];
+    }
+    return _collectionView;
+    
+}
 
 @end

@@ -10,7 +10,7 @@
 
 @interface LDViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) NSString *titleString;
 
 
 @end

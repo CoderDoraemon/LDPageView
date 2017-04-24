@@ -18,7 +18,7 @@
 		6B03C8DB1EA473560008BD21 /* LDPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8DA1EA473560008BD21 /* LDPageTitleView.m */; };
 		6B03C8DE1EA4736E0008BD21 /* LDPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8DD1EA4736E0008BD21 /* LDPageContentView.m */; };
 		6B03C8E21EA4B5740008BD21 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8E01EA4B5740008BD21 /* LDViewController.m */; };
-		6B03C8E31EA4B5740008BD21 /* LDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B03C8E11EA4B5740008BD21 /* LDViewController.xib */; };
+		6BC2D4C61EAD98AC00D9F706 /* LDCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,8 @@
 		6B03C8DD1EA4736E0008BD21 /* LDPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDPageContentView.m; sourceTree = "<group>"; };
 		6B03C8DF1EA4B5740008BD21 /* LDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
 		6B03C8E01EA4B5740008BD21 /* LDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
-		6B03C8E11EA4B5740008BD21 /* LDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDViewController.xib; sourceTree = "<group>"; };
+		6BC2D4C41EAD98AC00D9F706 /* LDCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollectionViewLayout.h; sourceTree = "<group>"; };
+		6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +88,8 @@
 				6B03C8BB1EA472E80008BD21 /* Supporting Files */,
 				6B03C8DF1EA4B5740008BD21 /* LDViewController.h */,
 				6B03C8E01EA4B5740008BD21 /* LDViewController.m */,
-				6B03C8E11EA4B5740008BD21 /* LDViewController.xib */,
+				6BC2D4C41EAD98AC00D9F706 /* LDCollectionViewLayout.h */,
+				6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */,
 			);
 			path = LDPageView;
 			sourceTree = "<group>";
@@ -175,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B03C8E31EA4B5740008BD21 /* LDViewController.xib in Resources */,
 				6B03C8CB1EA472E80008BD21 /* LaunchScreen.storyboard in Resources */,
 				6B03C8C81EA472E80008BD21 /* Assets.xcassets in Resources */,
 				6B03C8C61EA472E80008BD21 /* Main.storyboard in Resources */,
@@ -195,6 +196,7 @@
 				6B03C8DB1EA473560008BD21 /* LDPageTitleView.m in Sources */,
 				6B03C8E21EA4B5740008BD21 /* LDViewController.m in Sources */,
 				6B03C8D81EA473370008BD21 /* LDPageTitleStyle.m in Sources */,
+				6BC2D4C61EAD98AC00D9F706 /* LDCollectionViewLayout.m in Sources */,
 				6B03C8BD1EA472E80008BD21 /* main.m in Sources */,
 				6B03C8D51EA473160008BD21 /* LDPageView.m in Sources */,
 			);
@@ -353,6 +355,7 @@
 				6B03C8D11EA472E80008BD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

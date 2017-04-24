@@ -14,6 +14,9 @@
 
 @interface ViewController ()
 
+/** <#Description#> */
+@property (nonatomic, strong) LDPageView *pageView;
+
 @end
 
 @implementation ViewController
@@ -22,6 +25,9 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBar.translucent = NO;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.navigationItem.title = @"PageView";
@@ -31,9 +37,9 @@
     NSMutableArray *tempTitles = [NSMutableArray array];
     for (int i = 0 ; i < titles.count; i++) {
         LDViewController *vc = [[LDViewController alloc] init];
-        vc.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+//        vc.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
         
-        vc.titleLabel.text = titles[i];
+        vc.titleString = titles[i];
         
         [tempTitles addObject:vc];
     }
@@ -61,10 +67,17 @@
     // childVCs：每个标题对应要显示的控制器
     // parentVC：标题控制器对应的父控制器
     // titleStyle： 控制器标题的样式
-    LDPageView *pageView = [[LDPageView alloc] initWithFrame:self.view.bounds titles:titles childViewControllers:tempTitles parentViewController:self titleStyle:titleStyle];
+    LDPageView *pageView = [[LDPageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 49) titles:titles childViewControllers:tempTitles parentViewController:self titleStyle:titleStyle];
     [self.view addSubview:pageView];
     
+    self.pageView = pageView;
     
+    
+    
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
     
 }
 
