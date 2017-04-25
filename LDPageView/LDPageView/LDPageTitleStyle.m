@@ -25,6 +25,8 @@
         _scrollLineHeight = 2;
         _scrollLineColor = _selectedColor;
         _hasGradient = NO;
+        _pageControlHeight = 20;
+        _isTilteInTop = YES;
     }
     return self;
 }

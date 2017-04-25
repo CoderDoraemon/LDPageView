@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6B03C8BD1EA472E80008BD21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8BC1EA472E80008BD21 /* main.m */; };
 		6B03C8C01EA472E80008BD21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8BF1EA472E80008BD21 /* AppDelegate.m */; };
-		6B03C8C31EA472E80008BD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8C21EA472E80008BD21 /* ViewController.m */; };
 		6B03C8C61EA472E80008BD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B03C8C41EA472E80008BD21 /* Main.storyboard */; };
 		6B03C8C81EA472E80008BD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B03C8C71EA472E80008BD21 /* Assets.xcassets */; };
 		6B03C8CB1EA472E80008BD21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B03C8C91EA472E80008BD21 /* LaunchScreen.storyboard */; };
@@ -17,8 +16,12 @@
 		6B03C8D81EA473370008BD21 /* LDPageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8D71EA473370008BD21 /* LDPageTitleStyle.m */; };
 		6B03C8DB1EA473560008BD21 /* LDPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8DA1EA473560008BD21 /* LDPageTitleView.m */; };
 		6B03C8DE1EA4736E0008BD21 /* LDPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8DD1EA4736E0008BD21 /* LDPageContentView.m */; };
-		6B03C8E21EA4B5740008BD21 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03C8E01EA4B5740008BD21 /* LDViewController.m */; };
-		6BC2D4C61EAD98AC00D9F706 /* LDCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */; };
+		6B5EC7B61EAEFD930099ECD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7B21EAEFD930099ECD3 /* ViewController.m */; };
+		6B5EC7B91EAEFEB10099ECD3 /* LDPageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7B81EAEFEB10099ECD3 /* LDPageCollectionView.m */; };
+		6B5EC7C21EAF2ED30099ECD3 /* LDCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7BC1EAF2ED30099ECD3 /* LDCollectionViewLayout.m */; };
+		6B5EC7C31EAF2ED30099ECD3 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7BE1EAF2ED30099ECD3 /* LDViewController.m */; };
+		6B5EC7C41EAF2ED30099ECD3 /* LDOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7C11EAF2ED30099ECD3 /* LDOtherViewController.m */; };
+		6B5EC7CA1EAF34D50099ECD3 /* LDPageCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5EC7C91EAF34D50099ECD3 /* LDPageCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,6 @@
 		6B03C8BC1EA472E80008BD21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B03C8BE1EA472E80008BD21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B03C8BF1EA472E80008BD21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6B03C8C11EA472E80008BD21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6B03C8C21EA472E80008BD21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6B03C8C51EA472E80008BD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B03C8C71EA472E80008BD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B03C8CA1EA472E80008BD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,10 +41,18 @@
 		6B03C8DA1EA473560008BD21 /* LDPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDPageTitleView.m; sourceTree = "<group>"; };
 		6B03C8DC1EA4736E0008BD21 /* LDPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDPageContentView.h; sourceTree = "<group>"; };
 		6B03C8DD1EA4736E0008BD21 /* LDPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDPageContentView.m; sourceTree = "<group>"; };
-		6B03C8DF1EA4B5740008BD21 /* LDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
-		6B03C8E01EA4B5740008BD21 /* LDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
-		6BC2D4C41EAD98AC00D9F706 /* LDCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollectionViewLayout.h; sourceTree = "<group>"; };
-		6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollectionViewLayout.m; sourceTree = "<group>"; };
+		6B5EC7B11EAEFD930099ECD3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B5EC7B21EAEFD930099ECD3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B5EC7B71EAEFEB10099ECD3 /* LDPageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDPageCollectionView.h; sourceTree = "<group>"; };
+		6B5EC7B81EAEFEB10099ECD3 /* LDPageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDPageCollectionView.m; sourceTree = "<group>"; };
+		6B5EC7BB1EAF2ED30099ECD3 /* LDCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollectionViewLayout.h; sourceTree = "<group>"; };
+		6B5EC7BC1EAF2ED30099ECD3 /* LDCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollectionViewLayout.m; sourceTree = "<group>"; };
+		6B5EC7BD1EAF2ED30099ECD3 /* LDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
+		6B5EC7BE1EAF2ED30099ECD3 /* LDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
+		6B5EC7C01EAF2ED30099ECD3 /* LDOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDOtherViewController.h; sourceTree = "<group>"; };
+		6B5EC7C11EAF2ED30099ECD3 /* LDOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDOtherViewController.m; sourceTree = "<group>"; };
+		6B5EC7C81EAF34D50099ECD3 /* LDPageCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDPageCollectionViewLayout.h; sourceTree = "<group>"; };
+		6B5EC7C91EAF34D50099ECD3 /* LDPageCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDPageCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,20 +85,15 @@
 		6B03C8BA1EA472E80008BD21 /* LDPageView */ = {
 			isa = PBXGroup;
 			children = (
+				6B5EC7AA1EAEFD930099ECD3 /* Classes */,
 				6B03C8D21EA472FB0008BD21 /* LDPageView */,
 				6B03C8BE1EA472E80008BD21 /* AppDelegate.h */,
 				6B03C8BF1EA472E80008BD21 /* AppDelegate.m */,
-				6B03C8C11EA472E80008BD21 /* ViewController.h */,
-				6B03C8C21EA472E80008BD21 /* ViewController.m */,
 				6B03C8C41EA472E80008BD21 /* Main.storyboard */,
 				6B03C8C71EA472E80008BD21 /* Assets.xcassets */,
 				6B03C8C91EA472E80008BD21 /* LaunchScreen.storyboard */,
 				6B03C8CC1EA472E80008BD21 /* Info.plist */,
 				6B03C8BB1EA472E80008BD21 /* Supporting Files */,
-				6B03C8DF1EA4B5740008BD21 /* LDViewController.h */,
-				6B03C8E01EA4B5740008BD21 /* LDViewController.m */,
-				6BC2D4C41EAD98AC00D9F706 /* LDCollectionViewLayout.h */,
-				6BC2D4C51EAD98AC00D9F706 /* LDCollectionViewLayout.m */,
 			);
 			path = LDPageView;
 			sourceTree = "<group>";
@@ -105,6 +109,8 @@
 		6B03C8D21EA472FB0008BD21 /* LDPageView */ = {
 			isa = PBXGroup;
 			children = (
+				6B5EC7C81EAF34D50099ECD3 /* LDPageCollectionViewLayout.h */,
+				6B5EC7C91EAF34D50099ECD3 /* LDPageCollectionViewLayout.m */,
 				6B03C8D31EA473160008BD21 /* LDPageView.h */,
 				6B03C8D41EA473160008BD21 /* LDPageView.m */,
 				6B03C8D61EA473370008BD21 /* LDPageTitleStyle.h */,
@@ -113,8 +119,41 @@
 				6B03C8DA1EA473560008BD21 /* LDPageTitleView.m */,
 				6B03C8DC1EA4736E0008BD21 /* LDPageContentView.h */,
 				6B03C8DD1EA4736E0008BD21 /* LDPageContentView.m */,
+				6B5EC7B71EAEFEB10099ECD3 /* LDPageCollectionView.h */,
+				6B5EC7B81EAEFEB10099ECD3 /* LDPageCollectionView.m */,
 			);
 			path = LDPageView;
+			sourceTree = "<group>";
+		};
+		6B5EC7AA1EAEFD930099ECD3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B5EC7BA1EAF2ED30099ECD3 /* First */,
+				6B5EC7BF1EAF2ED30099ECD3 /* second */,
+				6B5EC7B11EAEFD930099ECD3 /* ViewController.h */,
+				6B5EC7B21EAEFD930099ECD3 /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6B5EC7BA1EAF2ED30099ECD3 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				6B5EC7BB1EAF2ED30099ECD3 /* LDCollectionViewLayout.h */,
+				6B5EC7BC1EAF2ED30099ECD3 /* LDCollectionViewLayout.m */,
+				6B5EC7BD1EAF2ED30099ECD3 /* LDViewController.h */,
+				6B5EC7BE1EAF2ED30099ECD3 /* LDViewController.m */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		6B5EC7BF1EAF2ED30099ECD3 /* second */ = {
+			isa = PBXGroup;
+			children = (
+				6B5EC7C01EAF2ED30099ECD3 /* LDOtherViewController.h */,
+				6B5EC7C11EAF2ED30099ECD3 /* LDOtherViewController.m */,
+			);
+			path = second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5EC7C21EAF2ED30099ECD3 /* LDCollectionViewLayout.m in Sources */,
+				6B5EC7CA1EAF34D50099ECD3 /* LDPageCollectionViewLayout.m in Sources */,
+				6B5EC7B61EAEFD930099ECD3 /* ViewController.m in Sources */,
 				6B03C8DE1EA4736E0008BD21 /* LDPageContentView.m in Sources */,
-				6B03C8C31EA472E80008BD21 /* ViewController.m in Sources */,
+				6B5EC7C41EAF2ED30099ECD3 /* LDOtherViewController.m in Sources */,
 				6B03C8C01EA472E80008BD21 /* AppDelegate.m in Sources */,
 				6B03C8DB1EA473560008BD21 /* LDPageTitleView.m in Sources */,
-				6B03C8E21EA4B5740008BD21 /* LDViewController.m in Sources */,
 				6B03C8D81EA473370008BD21 /* LDPageTitleStyle.m in Sources */,
-				6BC2D4C61EAD98AC00D9F706 /* LDCollectionViewLayout.m in Sources */,
+				6B5EC7C31EAF2ED30099ECD3 /* LDViewController.m in Sources */,
+				6B5EC7B91EAEFEB10099ECD3 /* LDPageCollectionView.m in Sources */,
 				6B03C8BD1EA472E80008BD21 /* main.m in Sources */,
 				6B03C8D51EA473160008BD21 /* LDPageView.m in Sources */,
 			);

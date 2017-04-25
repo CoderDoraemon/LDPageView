@@ -33,7 +33,7 @@
     self.navigationItem.title = @"PageView";
     
     
-    NSArray *titles = @[@"推荐", @"头条", @"军事", @"段子", @"哈哈哈", @"段子", @"轻松一刻", @"哈哈"];
+    NSArray *titles = @[@"推荐", @"头条", @"军事", @"段子"];
     NSMutableArray *tempTitles = [NSMutableArray array];
     for (int i = 0 ; i < titles.count; i++) {
         LDViewController *vc = [[LDViewController alloc] init];
@@ -47,21 +47,21 @@
     LDPageTitleStyle *titleStyle = [[LDPageTitleStyle alloc] init];
     
     
-    //        titleStyle.isScrollEnable = false
+    titleStyle.isScrollEnable = NO;
     // 样式一
     titleStyle.hasScrollLine = YES;
     
     // 样式二
-    //        titleStyle.hasScrollLine = true
-    //        titleStyle.lineScrollType = .RealTime
+    //        titleStyle.hasScrollLine = YES;
+//    titleStyle.lineScrollType = kLineScrollTypeRealTime;
     
     // 样式三
-    titleStyle.hasGradient = NO;
-    //        titleStyle.selectedColor = UIColor(red: 1.0, green: 0.5, blue: 0, alpha: 1.0)
+//    titleStyle.hasGradient = NO;
+//    titleStyle.selectedColor = [UIColor colorWithRed:1.0 green:0.5 blue:0 alpha:1.0];
     
     // 样式四
-    //        titleStyle.hasGradient = true
-    //        titleStyle.selectedFont = UIFont.systemFont(ofSize: 16)
+//    titleStyle.hasGradient = YES;
+//    titleStyle.selectedFont = [UIFont systemFontOfSize:16];
     
     // titles：标题数组
     // childVCs：每个标题对应要显示的控制器

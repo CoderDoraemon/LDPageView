@@ -22,6 +22,12 @@ typedef enum {
 /** 标题视图高度 */
 @property (nonatomic, assign) CGFloat titleViewHeight;
 
+/** 标题视图是否在顶部 */
+@property (nonatomic, assign) BOOL isTilteInTop;
+
+/** pageControlHeight */
+@property (nonatomic, assign) CGFloat pageControlHeight;
+
 /** 标题间距 */
 @property (nonatomic, assign) CGFloat margin;
 
@@ -54,5 +60,6 @@ typedef enum {
 
 /** 标题文字是否有渐变的效果 */
 @property (nonatomic, assign) BOOL hasGradient;
+
 
 @end
