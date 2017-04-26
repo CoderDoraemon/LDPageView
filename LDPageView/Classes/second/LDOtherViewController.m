@@ -63,7 +63,23 @@ static NSString *const kLDPageCollectionViewID = @"kLDPageCollectionViewID";
 }
 
 - (NSInteger)pageCollectionView:(LDPageCollectionView *)pageCollectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    
+    switch (section) {
+        case 0:
+            return 20;
+            break;
+        case 1:
+            return 40;
+            break;
+        case 2:
+            return 15;
+            break;
+            
+        default:
+            return 8;
+            break;
+    }
+    
 }
 
 

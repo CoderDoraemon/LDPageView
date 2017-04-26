@@ -199,6 +199,15 @@
     return [UIColor colorWithRed:r green:g blue:b alpha:1.0];
 }
 
+- (void)changeCurrentIndex:(NSInteger)currentIndex {
+    
+    UILabel *tapLabel = self.titleLabels[currentIndex];
+    
+    [self changeSelectedLabel:tapLabel];
+    
+}
+
+
 #pragma mark - LDPageContentViewDelegate
 - (void)pageContentView:(LDPageContentView *)pageContentView didEndScrollAtindex:(NSInteger)index {
     

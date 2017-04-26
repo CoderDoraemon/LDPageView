@@ -44,4 +44,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles titleStyle:(LDPageTitleStyle *)titleStyle;
 
+- (void)changeCurrentIndex:(NSInteger)currentIndex;
+
 @end
